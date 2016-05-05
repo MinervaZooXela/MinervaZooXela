@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notivias"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/noticias" />
+        <item
+            android:id="@+id/nav_galeria"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/galeria" />
+        <item
+            android:id="@+id/nav_galeria3D"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/galeria_3d" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/videos" />
+        <item
+            android:id="@+id/nav_proyectos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/proyectos" />
+        <item
+            android:id="@+id/nav_ayudanos"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/ayudanos" />
+        <item
+            android:id="@+id/nav_tour"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/tour" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/contactenos" />
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/ubicacion" />
+        <item
+            android:id="@+id/nav_acercaDe"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/acerca_de" />
+    </group>
+</menu>
