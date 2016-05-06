@@ -1,5 +1,6 @@
 package gt.edu.intecap.minervazoo.myapplication.controlador;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -25,7 +26,7 @@ import gt.edu.intecap.minervazoo.myapplication.vista.Noticias;
 import gt.edu.intecap.minervazoo.myapplication.vista.Proyecto;
 import gt.edu.intecap.minervazoo.myapplication.vista.Tour;
 import gt.edu.intecap.minervazoo.myapplication.vista.Ubicacion;
-import gt.edu.intecap.minervazoo.myapplication.vista.Videos;
+import gt.edu.intecap.minervazoo.myapplication.vista.YouTube;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -95,51 +96,46 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        boolean fragmentTransaction = false;
         Fragment fragment = null;
-        Class fragmentClass = null;
-        switch (item.getItemId()) {
-            case R.id.nav_notivias:
-                fragmentClass = Noticias.class;
-                break;
-            case R.id.nav_galeria:
-                fragmentClass = Galeria.class;
-                break;
-            case R.id.nav_galeria3D:
-                fragmentClass = Galeria_3D.class;
-                break;
-            case R.id.nav_videos:
-                fragmentClass = Videos.class;
-                break;
-            case R.id.nav_proyectos:
-                fragmentClass = Proyecto.class;
-                break;
-            case R.id.nav_ayudanos:
-                fragmentClass = Ayuda.class;
-                break;
-            case R.id.nav_tour:
-                fragmentClass = Tour.class;
-                break;
-            case R.id.nav_contacto:
-                fragmentClass = Contacto.class;
-                break;
-            case R.id.nav_ubicacion:
-                fragmentClass = Ubicacion.class;
-                break;
-            case R.id.nav_acercaDe:
-                fragmentClass = AcercaDe.class;
-                break;
+        int id = item.getItemId();
+        if (id == R.id.nav_noticias) {
+            fragment = new Noticias();
+            fragmentTransaction= true;
+        } else if (id == R.id.nav_galeria) {
+            fragment = new Galeria();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_galeria3D) {
+            fragment = new Galeria_3D();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_videos) {
+            Intent videos = new Intent(getApplicationContext(), YouTube.class);
+            startActivity(videos);
+        } else if (id == R.id.nav_proyectos) {
+            fragment = new Proyecto();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_ayudanos) {
+            fragment = new Ayuda();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_tour) {
+            fragment = new Tour();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_contacto) {
+            fragment = new Contacto();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_ubicacion) {
+            fragment = new Ubicacion();
+            fragmentTransaction = true;
+        } else if (id == R.id.nav_acercaDe) {
+            fragment = new AcercaDe();
+            fragmentTransaction= true;
         }
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (fragmentTransaction) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedor_fragments, fragment)
+                    .commit();
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
         }
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.contenedor_fragments, fragment).commit();
-        item.setChecked(true);
-        setTitle(item.getTitle());
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
