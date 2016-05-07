@@ -17,6 +17,7 @@ public class Noticias extends Fragment {
     private static final int INTERVALO = 5000;
     private ViewFlipper flipper;
     private TextView paginaOficial;
+    private String urlPaginaOficial;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,8 +37,18 @@ public class Noticias extends Fragment {
 
         paginaOficial = (TextView) vista.findViewById(R.id.tvPaginaOficial);
         paginaOficial.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "<a href='http://www.google.com'> Google </a>";
-        paginaOficial.setText(Html.fromHtml(text));
+        urlPaginaOficial = "<a href='https://www.facebook.com/ZOOLOGICO-MINERVA-QUETZALTENANGO-159173550812934'> Visita nuestra página oficial </a>";
+        paginaOficial.setText(Html.fromHtml(urlPaginaOficial));
         return vista;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
     }
 }
