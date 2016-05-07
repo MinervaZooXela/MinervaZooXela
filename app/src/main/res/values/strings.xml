@@ -18,4 +18,8 @@
     <string name="contactenos">Contactenos</string>
     <string name="ubicacion">Ubicacion</string>
     <string name="acerca_de">Acerca de</string>
+    <string name="noticias_zoologico">El parque Zoologico Municipal Minerva pertenece a la municipalidad de Quetzaltenango. Tiene por objeto presentar al visitante una muestra de la fauna regional para conocerla, apreciarla y protegerla. Desde hace varios años funciona tambien como un centro de rescate animal creando nuevos albuergues, reformando sus estructuras para crear recintos mas adecuados.</string>
+    <string name="horarios">Horarios</string>
+    <string name="martes_domingo">Martes a domingo</string>
+    <string name="nuevo_a_cuatro">9:00 a.m. a 4:00 p.m.</string>
 </resources>
