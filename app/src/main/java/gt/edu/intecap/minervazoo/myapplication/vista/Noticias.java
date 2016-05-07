@@ -31,7 +31,6 @@ public class Noticias extends Fragment {
                 flipper.showNext();
             }
         });
-
         flipper.setFlipInterval(INTERVALO);
         flipper.startFlipping();
 
