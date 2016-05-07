@@ -23,13 +23,24 @@
 
                 <ImageView
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/zoo11"
+                    android:id="@+id/flipper1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/zoo12"
+                    android:id="@+id/flipper2"
                     android:layout_height="match_parent" />
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:src="@drawable/zoo13"
+                    android:id="@+id/flipper3"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:src="@drawable/zoo14"
+                    android:id="@+id/flipper4"/>
             </ViewFlipper>
 
         </LinearLayout>
