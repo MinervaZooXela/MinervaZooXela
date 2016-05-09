@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="52dp"
+    tools:context="gt.edu.intecap.minervazoo.myapplication.vista.Noticias">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ViewFlipper
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/flipper">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagen1"
+                    android:id="@+id/flipper1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/imagen2"
+                    android:id="@+id/flipper2"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagen3"
+                    android:id="@+id/flipper3"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagen4"
+                    android:id="@+id/flipper4"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagen5"
+                    android:id="@+id/flipper5"/>
+            </ViewFlipper>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_18sdp"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:paddingRight="@dimen/_18sdp"
+                    android:text="@string/noticias_zoologico"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_18sdp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="@string/horarios"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_height="match_parent"
+                    android:text="@string/martes_domingo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="@string/nuevo_a_cuatro"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/tvPaginaOficial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
