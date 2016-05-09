@@ -22,9 +22,7 @@ public class Noticias extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View vista = inflater.inflate(R.layout.fragment_noticias, container, false);
-
         flipper = (ViewFlipper)vista.findViewById(R.id.flipper);
         flipper.setOnClickListener(new View.OnClickListener() {
             @Override
