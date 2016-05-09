@@ -24,5 +24,6 @@
     <string name="nuevo_a_cuatro">9:00 a.m. a 4:00 p.m.</string>
     <string name="pagina_oficial"> Visita nuestra página oficial </string>
     <string name="zoologico_minerva">Zoológico Minerva</string>
+    <string name="nombre_transicion_imagen">imagen_compartida</string>
     <string name="bienvenido">Bienvenido</string>
 </resources>
