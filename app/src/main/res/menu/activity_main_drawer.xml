@@ -4,43 +4,43 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_noticias"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/noticias"
             android:title="@string/noticias" />
         <item
             android:id="@+id/nav_galeria"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/galeria"
             android:title="@string/galeria" />
         <item
             android:id="@+id/nav_galeria3D"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/galeriad"
             android:title="@string/galeria_3d" />
         <item
             android:id="@+id/nav_videos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/videos"
             android:title="@string/videos" />
         <item
             android:id="@+id/nav_proyectos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/proyectos"
             android:title="@string/proyectos" />
         <item
             android:id="@+id/nav_ayudanos"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ayudanos"
             android:title="@string/ayudanos" />
         <item
             android:id="@+id/nav_tour"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/tour"
             android:title="@string/tour" />
         <item
             android:id="@+id/nav_contacto"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/contacto"
             android:title="@string/contactenos" />
         <item
             android:id="@+id/nav_ubicacion"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ubicacion"
             android:title="@string/ubicacion" />
         <item
             android:id="@+id/nav_acercaDe"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/acerca"
             android:title="@string/acerca_de" />
     </group>
 </menu>
