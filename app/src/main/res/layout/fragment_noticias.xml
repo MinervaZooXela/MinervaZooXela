@@ -41,6 +41,11 @@
                     android:layout_height="match_parent"
                     android:src="@mipmap/imagen4"
                     android:id="@+id/flipper4"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/imagen4"
+                    android:id="@+id/flipper5"/>
             </ViewFlipper>
 
         </LinearLayout>
