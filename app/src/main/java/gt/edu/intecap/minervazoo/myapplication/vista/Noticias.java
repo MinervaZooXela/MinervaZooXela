@@ -34,7 +34,6 @@ public class Noticias extends Fragment {
         });
         flipper.setFlipInterval(INTERVALO);
         flipper.startFlipping();
-
         paginaOficial = (TextView) vista.findViewById(R.id.tvPaginaOficial);
         paginaOficial.setMovementMethod(LinkMovementMethod.getInstance());
         urlPaginaOficial = "<a href='https://www.facebook.com/ZOOLOGICO-MINERVA-QUETZALTENANGO-159173550812934'> Visita nuestra página oficial </a>";
@@ -45,6 +44,13 @@ public class Noticias extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        flipper.startFlipping();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        flipper.stopFlipping();
     }
 
     @Override
