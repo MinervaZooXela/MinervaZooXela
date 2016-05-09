@@ -24,22 +24,22 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen1"
+                    android:src="@mipmap/imagen1"
                     android:id="@+id/flipper1"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:src="@drawable/imagen2"
+                    android:src="@mipmap/imagen2"
                     android:id="@+id/flipper2"
                     android:layout_height="match_parent" />
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen3"
+                    android:src="@mipmap/imagen3"
                     android:id="@+id/flipper3"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen4"
+                    android:src="@mipmap/imagen4"
                     android:id="@+id/flipper4"/>
             </ViewFlipper>
 
