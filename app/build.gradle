@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support:support-v4:23.3.0'
     compile 'com.google.android.gms:play-services:8.4.0'
     compile files('lib/YouTubeAndroidPlayerApi.jar')
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
 }
