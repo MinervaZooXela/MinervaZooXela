@@ -25,28 +25,33 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen1"
+                    android:src="@drawable/noticias1"
                     android:id="@+id/flipper1"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:src="@drawable/imagen2"
+                    android:src="@drawable/noticias2"
                     android:id="@+id/flipper2"
                     android:layout_height="match_parent" />
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen3"
+                    android:src="@drawable/noticias3"
                     android:id="@+id/flipper3"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen4"
+                    android:src="@drawable/noticias4"
                     android:id="@+id/flipper4"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagen5"
+                    android:src="@drawable/noticias5"
                     android:id="@+id/flipper5"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/noticias6"
+                    android:id="@+id/flipper6"/>
             </ViewFlipper>
 
         </LinearLayout>

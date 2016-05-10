@@ -24,28 +24,33 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/imagen1"
+                    android:src="@mipmap/noticias1"
                     android:id="@+id/flipper1"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:src="@mipmap/imagen2"
+                    android:src="@mipmap/noticias2"
                     android:id="@+id/flipper2"
                     android:layout_height="match_parent" />
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/imagen3"
+                    android:src="@mipmap/noticias3"
                     android:id="@+id/flipper3"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/imagen4"
+                    android:src="@mipmap/noticias4"
                     android:id="@+id/flipper4"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/imagen4"
+                    android:src="@mipmap/noticias5"
                     android:id="@+id/flipper5"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/noticias6"
+                    android:id="@+id/flipper6"/>
             </ViewFlipper>
 
         </LinearLayout>
