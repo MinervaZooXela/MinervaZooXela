@@ -18,6 +18,10 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube);
+        iniciaVars();
+    }
+
+    private void iniciaVars() {
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubePlayerView.initialize(API_KEY, this);
     }
