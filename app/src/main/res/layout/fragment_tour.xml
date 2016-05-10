@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/mapa_temoporal"
         android:paddingTop="@dimen/_50sdp"
-        android:scaleType="fitXY"/>
+        android:scaleType="matrix"/>
 
 </LinearLayout>
 
