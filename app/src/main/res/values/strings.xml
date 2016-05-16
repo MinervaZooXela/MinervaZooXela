@@ -26,4 +26,22 @@
     <string name="zoologico_minerva">Zoológico Minerva</string>
     <string name="nombre_transicion_imagen">imagen_compartida</string>
     <string name="bienvenido">Bienvenido</string>
+
+
+    --Contactenos
+    <string name="Telefono">(502) 2220 0022 Telefono</string>
+    <string name="Email">minervazoo@yahoo.com Email</string>
+    <string name="Direccion">Avenida las americas 0-50 zona 3 Quetzaltenango, Guatemala, C.A</string>
+    <string name="Facebook">Zoologico Minerva, Quetzaltenango</string>
+    <string name="Twitter">Zoologico Minerva, Quetzaltenango</string>
+    <string name="Google_Plus">Zoologico Minerva, Quetzaltenango</string>
+    <string name="YouTube">Zoologico Minerva</string>
+    <string name="gusta_leer">Gusta_Leer</string>
+    <string name="gusta_hacer">Gusta_Hacer</string>
+    <string name="nombre_persona">Nombre_Persona</string>
+    <string name="intro">Intro</string>
+    <string name="direccion_correo">Direccion_Correo</string>
+    <string name="envia_correo">Enviar_Correo</string>
+    <string name="tvmensaje">tv_mennsaj</string>
+    <string name="enviar_correo">ennviar_correo</string>
 </resources>
